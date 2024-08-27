@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-27T22:37:21+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">cybersecurity-sike!</title><subtitle>Enthusiastic person to do some thing in the field of cybersecurity</subtitle><author><name>musiczu</name></author><entry><title type="html">My First Blog</title><link href="http://localhost:4000/My-first-blog/" rel="alternate" type="text/html" title="My First Blog" /><published>2024-08-26T00:00:00+07:00</published><updated>2024-08-26T00:00:00+07:00</updated><id>http://localhost:4000/My-first-blog</id><content type="html" xml:base="http://localhost:4000/My-first-blog/"><![CDATA[<p>Hello it me</p>
+
+<p>/h3 hello</p>]]></content><author><name>musiczu</name></author><summary type="html"><![CDATA[Hello it me]]></summary></entry><entry><title type="html">My First CTF Write-up</title><link href="http://localhost:4000/ctf/write-up/write-up/" rel="alternate" type="text/html" title="My First CTF Write-up" /><published>2024-08-25T00:00:00+07:00</published><updated>2024-08-25T00:00:00+07:00</updated><id>http://localhost:4000/ctf/write-up/write-up</id><content type="html" xml:base="http://localhost:4000/ctf/write-up/write-up/"><![CDATA[<p>This is my write-up for the XYZ CTF challenge where I exploited a SQL Injection vulnerability…</p>]]></content><author><name>musiczu</name></author><category term="CTF" /><category term="Write-up" /><category term="Web Exploitation" /><category term="SQL Injection" /><summary type="html"><![CDATA[This is my write-up for the XYZ CTF challenge where I exploited a SQL Injection vulnerability…]]></summary></entry><entry><title type="html">dasdasdas</title><link href="http://localhost:4000/cybersecurity/write-up/aARM64/" rel="alternate" type="text/html" title="dasdasdas" /><published>2024-08-13T00:00:00+07:00</published><updated>2024-08-13T00:00:00+07:00</updated><id>http://localhost:4000/cybersecurity/write-up/aARM64</id><content type="html" xml:base="http://localhost:4000/cybersecurity/write-up/aARM64/"><![CDATA[]]></content><author><name>musiczu</name></author><category term="cybersecurity" /><category term="Write-up" /><category term="OS" /><category term="CPU" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Perfection</title><link href="http://localhost:4000/Perfection/" rel="alternate" type="text/html" title="Perfection" /><published>2024-05-16T00:00:00+07:00</published><updated>2024-05-16T00:00:00+07:00</updated><id>http://localhost:4000/Perfection</id><content type="html" xml:base="http://localhost:4000/Perfection/"><![CDATA[<h1 id="perfection">Perfection</h1>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nmap <span class="nt">-sV</span> <span class="nt">-sT</span> <span class="nt">-Pn</span> 10.10.11.253 <span class="o">&gt;</span> nmap.txt
+</code></pre></div></div>
+
+<p>nmap</p>
+
+<p><img src="Perfection%2061be048794494634a64af5963e07058d/Untitled.png" alt="Untitled" /></p>
+
+<h2 id="try-fuzzing-diretories">Try fuzzing diretories</h2>
+
+<p>manual fuzzing and got 404 not found</p>
+
+<p><img src="Perfection%2061be048794494634a64af5963e07058d/Untitled%201.png" alt="Untitled" /></p>
+
+<p><img src="Perfection%2061be048794494634a64af5963e07058d/Untitled%202.png" alt="Untitled" /></p>
+
+<p>ใช้ dirb กับ ffuf แล้วก็ไม่เจออะไร</p>
+
+<p><img src="Perfection%2061be048794494634a64af5963e07058d/Untitled%203.png" alt="Untitled" /></p>
+
+<h1 id="check-request">check request</h1>
+
+<p>weigted</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /weighted-grade-calc HTTP/1.1
+Host: 10.10.11.253
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 168
+Origin: http://10.10.11.253
+Connection: close
+Referer: http://10.10.11.253/weighted-grade
+Upgrade-Insecure-Requests: 1
+
+category1=a&amp;grade1=4&amp;weight1=20&amp;category2=b&amp;grade2=4&amp;weight2=20&amp;category3=c&amp;grade3=4&amp;weight3=20&amp;category4=dasdase&amp;grade4=4&amp;weight4=20&amp;category5=sdas&amp;grade5=4&amp;weight5=20
+</code></pre></div></div>
+
+<p>###</p>]]></content><author><name>musiczu</name></author><summary type="html"><![CDATA[Perfection]]></summary></entry></feed>
