@@ -3,10 +3,8 @@ title: "[#0-Day Cyber grind] Initialize my cybersecurity path"
 date: 2024-08-28
 categories:
   - Cybersecurity
-  - 
 tags:
   - Chit-Chat
-  - 
 ---
 
 ### [Zero-Day] Cyber grind
